@@ -8,7 +8,7 @@ driver = webdriver.Chrome()  # You may need to adjust the path to your Chrome dr
 
 driver.get(url)
 
-# Assuming the table has a class, replace 'your_table_class' with the actual class
+# Identifying table using class name
 table = driver.find_element(By.CLASS_NAME, "xnn-tablea")
 rows = table.find_elements(By.TAG_NAME, 'tr')
 
